@@ -19,10 +19,11 @@
   },
   "homepage": "https://github.com/mtvphnx/excel-js#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "nodemon": "^2.0.4"
   }
 }
