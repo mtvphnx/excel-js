@@ -1,3 +1,3 @@
-import './scss/index.scss';
+import './styles/index.scss';
 
 console.log('Wake up, Neo...');
