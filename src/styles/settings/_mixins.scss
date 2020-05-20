@@ -1,1 +1,37 @@
+@import "./variables";
+
 // миксины
+@mixin button($color: green) {
+    position: relative;
+
+    height: $button;
+    width: $button;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(0, 0, 0, .7);
+
+    border-radius: 5px;
+    transition: .3s;
+    user-select: none;
+    box-shadow: none;
+    border: none;
+    background-color: inherit;
+
+    & i {
+        font-size: 20px;
+    }
+
+    &:active, &.active {
+        color: $color;
+        outline: none;
+    }
+
+    &:hover, &:focus {
+        background-color: #eee;
+        cursor: pointer;
+        outline: none;
+    }
+}
