@@ -1,0 +1,9 @@
+@import "../settings/mixins";
+@import "../settings/variables";
+
+.toolbar {
+    padding: 10px;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
