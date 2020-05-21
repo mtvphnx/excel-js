@@ -1,6 +1,3 @@
-// шрифты
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 // библиотеки
 @import "~normalize.css";
 
@@ -30,6 +27,8 @@ body {
 
 .excel {
     position: relative;
+
+    color: #888;
 }
 
 .button {
