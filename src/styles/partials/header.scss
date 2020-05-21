@@ -5,11 +5,13 @@
     position: sticky;
     top: 0;
 
+    border: 1px solid gray;
+
     &__content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 0;
+        padding: 10px;
     }
 
     &__input {
@@ -33,7 +35,7 @@
     &__input:focus {
         margin: -1px;
 
-        border: 2px solid #1a73e8;
+        border: 2px solid green;
         background-color: #fff;
         border-radius: 4px;
     }

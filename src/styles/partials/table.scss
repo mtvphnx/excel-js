@@ -1,6 +1,69 @@
 @import "../settings/mixins";
 @import "../settings/variables";
 
-.table {
+html, body {
+    min-height: 100vh;
+}
 
+.table {
+    padding-bottom: 10px;
+    overflow-y: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 25px;
+    margin-top: -1px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:  $row-info;
+        height: 100%;
+        flex-shrink: 0;
+
+        border: 1px solid $border-color;
+        background-color:  #f8f9fa;
+    }
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    width: 120px;
+    margin-left: -1px;
+    height: 100%;
+
+    background-color:  #f8f9fa;
+    border: 1px solid $border-color;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    min-width: 40px;
+    width: 120px;
+    margin-left: -1px;
+    height: 100%;
+    padding: 0 5px;
+
+    color: #000;
+
+    border: 1px solid $border-color;
+    outline: none;
+
+    &.selected {
+        z-index: 2;
+
+        outline: 2px solid green;
+    }
 }

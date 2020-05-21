@@ -5,10 +5,10 @@
     display: flex;
     align-items: center;
 
-    border-bottom: 1px solid gray;
-
     &__title {
-        padding: 5px 10px;
+        padding: 5px 15px 5px 10px;
+        width:  $row-info;
+        margin-left: -1px;
 
         font-style: italic;
         font-size: 18px;
