@@ -12,81 +12,44 @@
 </head>
 <body>
     <div id="app" class="container">
-        <div class="excel">
-            <header class="header">
-                <div class="header__content">
-                    <input type="text" class="header__input" value="Новая таблица" tabindex="1">
-                    <div class="header__wrapper">
-                        <button class="header__button button" tabindex="2">
-                            <i class="material-icons">delete</i>
-                        </button>
-                        <button class="header__button button" tabindex="3">
-                            <i class="material-icons">exit_to_app</i>
-                        </button>
-                    </div>
+        <div class="dashboard">
+            <div class="dashboard__header">
+                <h1 class="dashboard__title">Приложение для работы с таблицами</h1>
+            </div>
+            <div class="dashboard__list">
+                <a href="javascript:void(0);" class="dashboard__link"><span>Новая</span><span>таблица</span></a>
+            </div>
+            <div class="dashboard__table">
+                <div class="dashboard__table-header">
+                    <span>Название</span>
+                    <span>Дата открытия</span>
                 </div>
-                <div class="toolbar">
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_bold</i>
-                    </button>
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_italic</i>
-                    </button>
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_underlined</i>
-                    </button>
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_align_left</i>
-                    </button>
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_align_center</i>
-                    </button>
-                    <button class="button" tabindex="4">
-                        <i class="material-icons">format_align_right</i>
-                    </button>
-                </div>
-                <div class="formula">
-                    <div class="formula__title">fx</div>
-                    <div class="formula__input" contenteditable spellcheck="false" tabindex="5"></div>
-                </div>
-            </header>
-            <div class="table">
-                <div class="row">
-                    <div class="row__info"></div>
-                    <div class="row__content">
-                        <div class="column">A</div>
-                        <div class="column">B</div>
-                        <div class="column">C</div>
-                        <div class="column">E</div>
-                        <div class="column">F</div>
-                        <div class="column">G</div>
-                        <div class="column">H</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row__info">1</div>
-                    <div class="row__content">
-                        <div class="cell selected" contenteditable>Номер</div>
-                        <div class="cell" contenteditable>№1</div>
-                        <div class="cell" contenteditable>№2</div>
-                        <div class="cell" contenteditable>№3</div>
-                        <div class="cell" contenteditable>№4</div>
-                        <div class="cell" contenteditable>№5</div>
-                        <div class="cell" contenteditable>№6</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row__info">2</div>
-                    <div class="row__content">
-                        <div class="cell" contenteditable>Сотрудник</div>
-                        <div class="cell" contenteditable>Иванов И.И.</div>
-                        <div class="cell" contenteditable>Петров П.П.</div>
-                        <div class="cell" contenteditable>Семенов С.С.</div>
-                        <div class="cell" contenteditable>Сидоров С.С.</div>
-                        <div class="cell" contenteditable>Михайлов М.М.</div>
-                        <div class="cell" contenteditable>Матвеев М.М.</div>
-                    </div>
-                </div>
+                <ul class="dashboard__table-list">
+                    <li class="dashboard__table-item">
+                        <a href="javascript:void(0);">
+                            <span>Учет доходов и расходов</span>
+                            <strong>12.05.20</strong>
+                        </a>
+                    </li>
+                    <li class="dashboard__table-item">
+                        <a href="javascript:void(0);">
+                            <span>Список студентов заочного отделения</span>
+                            <strong>11.03.20</strong>
+                        </a>
+                    </li>
+                    <li class="dashboard__table-item">
+                        <a href="javascript:void(0);">
+                            <span>Оценка годовой бухгалтерской отчетности</span>
+                            <strong>30.12.19</strong>
+                        </a>
+                    </li>
+                    <li class="dashboard__table-item">
+                        <a href="javascript:void(0);">
+                            <span>Список задолженностей заочной группы</span>
+                            <strong>10.12.19</strong>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
