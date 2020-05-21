@@ -4,6 +4,10 @@
 // библиотеки
 @import "~normalize.css";
 
+// всякое
+@import "./settings/mixins";
+@import "./settings/variables";
+
 // общие стили
 body {
     font-family: "Roboto", sans-serif;
@@ -26,6 +30,10 @@ body {
 
 .excel {
     position: relative;
+}
+
+.button {
+    @include button(green);
 }
 
 // компоненты
