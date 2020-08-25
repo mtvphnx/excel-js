@@ -1,0 +1,67 @@
+@import "../settings/mixins";
+@import "../settings/variables";
+
+.header {
+    position: sticky;
+    top: 0;
+
+    border: 1px solid gray;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    &__input {
+        padding: 2px 7px;
+
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+
+        border: 1px solid transparent;
+        background-color: inherit;
+        border-radius: 2px;
+        outline: none;
+        box-shadow: none;
+    }
+
+    &__input:hover {
+        border: 1px solid #c0c0c0;
+    }
+
+    &__input:focus {
+        margin: -1px;
+
+        border: 2px solid green;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button + &__button {
+        margin-left: 10px;
+    }
+
+    &__button {
+        @include button(#188038);
+
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    &__button i {
+        font-size: 24px;
+    }
+
+    &__button:active, &__button.active {
+        background-color: #e6f4ea;
+    }
+}
