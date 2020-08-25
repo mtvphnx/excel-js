@@ -1,13 +1,6 @@
-import './styles/index.scss';
+import './scss/index.scss';
+import {Excel} from '@/components/excel/Excel';
 
-console.log('Wake up, Neo...');
-
-const buttons = document.querySelectorAll('.header__button');
-
-for (const button of buttons) {
-    button.addEventListener('keydown', function(e) {
-        if (e.keyCode === 13) {
-            console.log(e.target);
-        }
-    });
-}
+const excel = new Excel('#app', {
+    components: []
+});
